@@ -251,6 +251,16 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+  #
+  # config.omniauth :instagram, ENV['INSTAGRAM_APP_ID'], ENV['INSTAGRAM_APP_SECRET']
+  #
+
+  config.omniauth :instagram, ENV["INSTAGRAM_ID"], ENV["INSTAGRAM_SECRET"],
+    scope: 'basic public_content follower_list comments relationships likes'
+    # info_fields: 'email, first_name, last_name',
+    # image_size: 'square',  # 50x50, guaranteed ratio
+    # secure_image_url: true
+
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

@@ -16,6 +16,11 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem 'omniauth'
+gem 'omniauth-instagram'
+gem 'instagram'
+gem 'ruby-instagram-scraper'
+gem 'insta_scrape'
 
 group :development, :test do
   gem 'better_errors'
